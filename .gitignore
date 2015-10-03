@@ -23,3 +23,8 @@ tmp/*
 *.gz
 *.gzip
 *.swp
+
+application/config.ini
+#application/config.local.ini
+#admin/application/config.ini
+#admin/application/config.local.ini

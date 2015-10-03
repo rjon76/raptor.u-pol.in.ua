@@ -1,0 +1,34 @@
+<h1>Add Constant</h1>
+
+<fieldset>
+<form action="" method="post">
+
+{if $consts.consts}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="form" style="margin:0;">
+<tr>
+    <td>
+        Constant:<br/>
+        <select name="name" class="select">
+        {foreach from=$consts.consts item=const}
+            <option value="{$const}">{$const}</option>
+        {/foreach}
+        </select>
+    </td>
+</tr>
+<tr>
+    <td>
+        Value:<br/>
+        <input type="text" name="value" class="text" />
+    </td>
+<tr>
+</tr>
+    <td>
+        <input type="submit" value="Add" class="submit" />
+    </td>
+</tr>
+</table>
+{else}
+All constants are already added!
+{/if}
+</form>
+</fieldset>

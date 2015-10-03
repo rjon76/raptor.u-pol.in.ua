@@ -1,0 +1,24 @@
+<h1>Users List</h1>
+
+<table border="0" cellpadding="0" cellspacing=="0">
+<tr>
+{foreach from=$users.usersList.users item=groupUsers key=groupId}
+    <td valign="top">
+    <fieldset>
+    <legend>{$users.usersList.groups[$groupId]}</legend>
+    <table border="0" cellpadding="0" cellspacing=="0" width="250">
+    {foreach from=$groupUsers item=user key=userId}
+    <tr>
+        <td>{$user}</td>
+        <td align="right">
+            <a href="/users/edit/id/{$userId}/" class="ctrl">edit</a>
+            <a href="/users/delete/id/{$userId}/" class="ctrl">delete</a>
+        </td>
+    </tr>
+    {/foreach}
+    </table>
+    </fieldset>
+    </td>
+{/foreach}
+</tr>
+</table>

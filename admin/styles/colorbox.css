@@ -1,0 +1,195 @@
+/*-----------------------*//*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow: visible;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible;left: 30px;right:30px;top:30px;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    Example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay {
+		background:#000;
+}
+#colorbox {
+}
+#cboxTopLeft {
+	width:14px;
+	height:14px;
+	background:none /*url(../images/cb/controls.png) -100px 0 no-repeat*/;
+}
+#cboxTopRight {
+	width:14px;
+	height:14px;
+	background:/*url(../images/cb/controls.png) -136px 0 no-repeat*/;
+}
+#cboxBottomLeft {
+	width:14px;
+	height:14px;
+	background:/*url(../images/cb/controls.png) -100px -37px no-repeat*/;
+}
+#cboxBottomRight {
+	width:14px;
+	height:14px;
+	background:/*url(../images/cb/controls.png) -136px -37px no-repeat*/;
+}
+#cboxMiddleLeft {
+	width:14px;
+	background:/*url(../images/cb/controls.png) left top repeat-y*/;
+}
+#cboxMiddleRight {
+	width:14px;
+	background:/*url(../images/cb/controls.png) right top repeat-y*/;
+}
+#cboxTopCenter {
+	height:14px;
+	background:/*url(../images/cb/border.png) 0 0 repeat-x*/;
+}
+#cboxBottomCenter {
+	height:14px;
+	background:/*url(../images/cb/border.png) 0 -36px repeat-x*/;
+}
+#cboxContent {
+	background:#fff;
+	text-align:left
+}
+#cboxLoadedContent {
+	margin-bottom:0px;
+}
+#cboxTitle {
+	color: #CCCCCC;
+	left: 60px;
+	position: absolute;
+	top: -20px;
+}
+#cboxCurrent {
+	color: #CCCCCC;
+	position: absolute;
+	right: 25px;
+	top: -20px;
+}
+#cboxSlideshow {
+	color: #FFFFFF;
+	position: absolute;
+	right: 90px;
+	top: -20px;
+}
+#cboxPrevious {
+	position:absolute;
+	top:0;
+	left:-27px;
+	background-image:url(../images/cb/previous.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+	width:20px;
+	height:100%;
+	text-indent:-9999px;
+}
+#cboxPrevious.hover {
+	/*background-position: -78px -49px;*/
+}
+#cboxNext {
+	position:absolute;
+	top:0;
+	right:-27px;
+	background-image:url(../images/cb/next.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+	width:20px;
+	height:100%;
+	text-indent:-9999px;
+}
+#cboxNext.hover {
+	/*background-position:-55px -49px;*/
+}
+#cboxLoadingOverlay {
+	background:url(../images/cb/loading_background.png) center center no-repeat;
+}
+#cboxLoadingGraphic {
+	background:url(../images/cb/loading.gif) center center no-repeat;
+}
+#cboxClose {
+	position:absolute;
+	top:0;
+	right:-29px;
+	background-image:url(../images/cb/close.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+	width:19px;
+	height:19px;
+	text-indent:-9999px;
+}
+
+#cboxClose.hover {
+	/*background-position:-28px -58px;*/
+}
+.cboxIE #cboxTopLeft {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/cb/internet_explorer/borderTopLeft.png, sizingMethod='scale');
+}
+.cboxIE #cboxTopCenter {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/cb/internet_explorer/borderTopCenter.png, sizingMethod='scale');
+}
+.cboxIE #cboxTopRight {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/cb/internet_explorer/borderTopRight.png, sizingMethod='scale');
+}
+.cboxIE #cboxBottomLeft {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/cb/internet_explorer/borderBottomLeft.png, sizingMethod='scale');
+}
+.cboxIE #cboxBottomCenter {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/cb/internet_explorer/borderBottomCenter.png, sizingMethod='scale');
+}
+.cboxIE #cboxBottomRight {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/cb/internet_explorer/borderBottomRight.png, sizingMethod='scale');
+}
+.cboxIE #cboxMiddleLeft {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/cb/internet_explorer/borderMiddleLeft.png, sizingMethod='scale');
+}
+.cboxIE #cboxMiddleRight {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/cb/internet_explorer/borderMiddleRight.png, sizingMethod='scale');
+}
+
+/* retina */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   -moz-device-pixel-ratio: 2){
+   
+    #cboxClose {
+    -webkit-background-size:19px 19px;-moz-background-size:19px 19px;background-size:19px 19px;
+    }
+    
+    #cboxPrevious,#cboxNext {
+    -webkit-background-size:19px 34px;-moz-background-size:19px 34px;background-size:19px 34px;
+    }
+    
+    #cboxClose {
+    	background-image:url(../images/cb/close@2x.png);
+    }
+     #cboxPrevious {
+    	background-image:url(../images/cb/previous@2x.png);
+    }
+     #cboxNext {
+    	background-image:url(../images/cb/next@2x.png);
+    }
+}
+
+
+/* /retina */

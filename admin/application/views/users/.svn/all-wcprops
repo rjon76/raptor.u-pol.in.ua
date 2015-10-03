@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2616/www/admin.venginse/application/views/users
+END
+usersEdit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2616/www/admin.venginse/application/views/users/usersEdit.tpl
+END
+groupsAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2616/www/admin.venginse/application/views/users/groupsAdd.tpl
+END
+usersAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2616/www/admin.venginse/application/views/users/usersAdd.tpl
+END
+groupsList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2616/www/admin.venginse/application/views/users/groupsList.tpl
+END
+groupsPermissions.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2616/www/admin.venginse/application/views/users/groupsPermissions.tpl
+END
+usersList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2616/www/admin.venginse/application/views/users/usersList.tpl
+END
+usersPermissions.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2616/www/admin.venginse/application/views/users/usersPermissions.tpl
+END

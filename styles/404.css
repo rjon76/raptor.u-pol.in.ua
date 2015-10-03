@@ -1,0 +1,14 @@
+@charset utf-8;
+
+.error404{
+    padding-top:35px;
+    padding-bottom:45px;
+    font-size:16px;
+    line-height:24px;
+}
+
+.error404 h2{
+    margin-bottom:15px;
+    font-size:21px;
+    line-height:28px;
+}

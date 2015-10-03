@@ -1,0 +1,26 @@
+<h1>Block fields</h1>
+
+<fieldset>
+<legend>Fields</legend>
+{if $content.fields}
+<table border="0" cellpadding="6" cellspacing="1" class="form">
+<tr>
+    <td>Name</td>
+    <td>Type</td>
+    <td></td>
+</tr>
+{foreach from=$content.fields item=field}
+<tr>
+    <td>{$field.bf_name}</td>
+    <td align="center">{$field.bf_type}</td>
+    <td>
+        <a href="/content/editfield/bid/{$field.bf_block_id}/fid/{$field.bf_id}/" class="ctrl">edit</a> |
+        <a href="/content/deletefield/bid/{$field.bf_block_id}/fid/{$field.bf_id}/" class="ctrl">delete</a>
+    </td>
+</tr>
+{/foreach}
+</table>
+{else}
+No fields for this block.
+{/if}
+</fieldset>

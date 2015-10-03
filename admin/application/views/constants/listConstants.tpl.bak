@@ -1,0 +1,38 @@
+<h1>Constants List</h1>
+
+<fieldset>
+<table border="0" cellpadding="6" cellspacing=="0" class="form" width="1100">
+
+    <tr class="th">
+        <td><strong>Id</strong></td>
+        <td><strong>Name</strong></td>
+        <td><strong>Value</strong></td>
+        <td><strong>Comment</strong></td>
+        <td><strong>Parent Id</strong></td>
+        <td>&nbsp;</td>
+    </tr>
+    {foreach from=$consts.consts item=const}
+    <tr>
+        <td align="center">{$const.c_id}</td>
+        <td style="color:#009;border-bottom:1px solid #fff;">{$const.c_name}</td>
+        <td style="font-size:12px;">
+            {if $const.c_name == 'siteClosed' ||
+                $const.c_name == 'trailingSlash' ||
+                $const.c_name == '404exist' ||
+                $const.c_name == 'isCacheable' ||
+				$const.c_name == 'use_min'}
+                {if $const.c_value == 0}No{else}Yes{/if}
+            {else}
+                {$const.c_value}
+            {/if}
+        </td>
+        <td style="font-size:12px;">{$const.c_comment}</td>
+        <td align="center">{$const.c_parent}</td>
+        <td>
+            <a href="/constants/edit/id/{$const.c_id}/" class="ctrl">edit</a> |
+            <a href="/constants/delete/id/{$const.c_id}/" class="ctrl">delete</a>
+        </td>
+    </tr>
+    {/foreach}
+</table>
+</fieldset>

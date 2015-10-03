@@ -1,0 +1,36 @@
+<h1>Add new Controller</h1>
+
+<fieldset>
+<legend>Controller data</legend>
+
+<form action="/controllers/list/" method="post">
+<table border="0" cellpadding="0" cellspacing=="0" class="form">
+    <tr>
+        <td>
+            * Controller name: {if $conts.err.contName}<span style="color:red;">(controller name is empty)</span>{/if}
+                               {if $conts.err.contNameExist}<span style="color:red;">(controller name is already exist)</span>{/if}
+            <br/>
+            <input type="text" name="cont_name" class="text" value="{$conts.val.contName}" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            * Controller menu name: {if $conts.err.contMenuName}<span style="color:red;">(controller menu name is empty)</span>{/if}
+            <br/>
+            <input type="text" name="cont_menu_name" class="text" value="{$conts.val.contMenuName}" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox" name="is_site_dependent" /> Is site dependent
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" class="submit" value="Add" name="contadd" />
+        </td>
+    </tr>
+</table>
+</form>
+
+</fieldset>

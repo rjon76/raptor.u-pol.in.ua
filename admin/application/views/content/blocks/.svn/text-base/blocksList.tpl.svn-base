@@ -1,0 +1,14 @@
+<h1 style="font-size:22px;">Page content edit [<a href="http://{$content.siteHostname}{$content.pageAddress}" target="_blank" title="Preview">{$content.pageAddress}</a>]</h1>
+
+<fieldset id="fs0">
+<legend style="color:#aaa;">Blocks</legend>
+
+{$content.blocksList}
+
+</fieldset>
+
+{literal}
+<script type="text/javascript">
+//var test = new nicEditor({iconsPath : '/images/nic_editor_icons.gif', buttonList : ['bold','italic','underline','strikeThrough','undo','redo','subscript','superscript','html','link', 'ul', 'ol', 'color']}).panelInstance('test');
+</script>
+{/literal}

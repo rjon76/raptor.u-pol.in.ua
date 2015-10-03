@@ -1,0 +1,64 @@
+#lstrlist{
+	clear:both;	
+}
+
+
+#lstrlist tr:hover td { background-color:#eee; }
+
+#lstrlist td{
+	font: 11px Verdana;
+}
+#lstrlist th{
+	background: #000080;
+	color: #ffff80;
+}
+#wCont{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	box-shadow: 0px 0px 15px #333;
+}
+
+#editw{
+	width: 500px;
+	border: 2px solid #252525;
+	background-color: White;
+	display: none;
+	padding: 0px;
+	position: relative;
+	z-index:100;
+	top: 40%;
+	box-shadow: 		0px 0px 35px #444;
+	-moz-box-shadow: 	0px 0px 35px #444;
+	-webkit-box-shadow: 0px 0px 35px #444;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+#editw textarea{
+	width: 100%;
+	border: 1px solid #A6A6A6;
+}
+
+.txtorg{
+	border: 1px solid #BDBDBD;	
+	background-color: #FFFFF0;
+	padding: 3px 3px 3px 3px;
+}
+
+.tali{
+	width: 300px;
+	border: none;
+}
+
+.transl_none{
+	background-color: #FFDBDB;
+}
+
+.transl_yes{
+	background-color: #D7FFEC;
+}

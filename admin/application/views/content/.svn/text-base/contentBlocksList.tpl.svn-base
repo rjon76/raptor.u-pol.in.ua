@@ -1,0 +1,23 @@
+<h1>Blocks</h1>
+
+<fieldset>
+<table border="0" cellpadding="6" cellspacing="1" class="form">
+<tr>
+    <td><strong>ID</strong></td>
+    <td><strong>Name</strong></td>
+    <td><strong>File</strong></td>
+    <td></td>
+</tr>
+{foreach from=$content.blocks item=block}
+<tr>
+    <td>{$block.b_id}</td>
+    <td>{$block.b_name}</td>
+    <td>{$block.b_file}</td>
+    <td>
+        <a href="/content/editblock/id/{$block.b_id}/" class="ctrl">edit</a> |
+        <a href="/content/deletebloc/id/{$block.b_id}/" onclick="{literal}if(!confirm('Do You really want to delete this block?')) {return;}{/literal}" class="ctrl">delete</a>
+    </td>
+</tr>
+{/foreach}
+</table>
+</fieldset>

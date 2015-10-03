@@ -1,0 +1,247 @@
+ERROR:
+ Address: /
+Date: 10/04/2013 19:43:29
+Fail to connect to database.
+Can't connect to MySQL server on 'localhost' (10061)
+
+ERROR:
+ Address: /
+Date: 10/04/2013 19:46:08
+Fail to connect to database.
+Can't connect to MySQL server on 'localhost' (10061)
+
+ERROR:
+ Address: /
+Date: 10/04/2013 19:46:16
+Fail to connect to database.
+Can't connect to MySQL server on 'localhost' (10061)
+
+ERROR:
+ Address: /
+Date: 10/04/2013 19:46:29
+Fail to connect to database.
+Can't connect to MySQL server on 'localhost' (10061)
+
+ERROR:
+ Address: /pro.html
+Date: 09/05/2013 10:11:50
+Query Failed
+Q: SELECT 	op_id
+					FROM cleverfiles2.pa_operators
+  					WHERE op_probability >= 65 AND op_blocked = "N" order by op_probability limit 1
+Unknown column 'op_probability' in 'where clause'
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:02:08
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:25:27
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:28:47
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:30:55
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:32:43
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:33:34
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:35:34
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:35:46
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:44:14
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:47:15
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:50:04
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 22/04/2015 20:50:48
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 23/04/2015 17:45:16
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/pages/hidden/id/1/
+Date: 23/04/2015 17:50:54
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/pages/hidden/id/1/
+Date: 23/04/2015 17:51:02
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/pages/cacheable/id/1/
+Date: 23/04/2015 17:51:06
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/pages/cacheable/id/1/
+Date: 23/04/2015 17:51:09
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/pages/instantcache/id/1/
+Date: 23/04/2015 17:51:10
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/pages/instantcache/id/1/
+Date: 23/04/2015 17:51:13
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/content/edit/id/1/
+Date: 23/04/2015 17:51:32
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /admin/pages/meta/id/1/
+Date: 23/04/2015 17:51:41
+Query Failed
+Q: SELECT c_name,
+                     c_value
+              FROM widestep3_db.const
+Table 'widestep3_db.const' doesn't exist
+
+ERROR:
+ Address: /elite-keylogger-mac
+Date: 24/04/2015 19:40:19
+Query Failed
+Q: SELECT bd.bd_value,
+                     bd.bd_hidden,
+                     bf.bf_name,
+                     bf.bf_type,
+                     bf.bf_default,
+                     bp.bp_id,
+                     bp.bp_parent,
+                     bp.bp_block_id,
+                     bd.bd_bp_id,
+                     bd.bd_id,
+                     b.b_name,
+                     b.b_file
+
+              FROM blocks2pages AS bp
+                LEFT JOIN blocks_data AS bd ON bp.bp_id = bd.bd_bp_id
+                LEFT JOIN blocks_fields AS bf ON bf.bf_id = bd.bd_field_id
+                LEFT JOIN blocks AS b ON b.b_id = bp.bp_block_id
+              WHERE bp.bp_page_id = 234 AND bp.bp_hidden != '1'  
+              ORDER BY bp.bp_order
+Unknown column 'bd.bd_hidden' in 'field list'
+

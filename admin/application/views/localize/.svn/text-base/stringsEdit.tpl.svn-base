@@ -1,0 +1,52 @@
+<h1>Edit Localized String</h1>
+<div>
+    <div id="clang">Current language is <span style="color:red;">{$lvals.lang|upper}</span></div>
+    <div id="flags">
+    <ul class="line">
+	{foreach from=$langs item=key}
+	<li><a href="/localstring/edit/lang/{$key.code}/id/{$lvals.id}/" title="{$key.name}"><img src="/images/{$key.code}.png" width="37" height="29" alt="{$key.name}" /></a></li>
+	{/foreach}
+    </ul>
+    </div>
+</div>
+<div class="clear" style="margin-bottom:11px;"></div>
+{if $lvals.postRes == 1}
+<p>Changes for localized string &quot;{$lform.nick}&quot; were saved successfully.</p>
+{elseif $lvals.postRes == 0}
+<p>Error occured. Some fields are empty or incorrectly filled in.</p>
+{/if}
+<fieldset><legend>Localized string</legend>
+<form action="" method="post">
+<table border="0" cellpadding="0" cellspacing="0" class="form">
+    <tr>
+	<td><a href="/localstring/list/lang/{$lvals.lang}/">List {$lvals.lang|upper} Localizations</a><br />&nbsp;</td>
+    </tr>
+    <tr>
+        <td>
+            * Nick:<br/>
+            <input type="text" name="nick" class="text" value="{$lform.nick}" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            English text:<br/>
+            <div class="text" style="padding:10px 5px;color:#a0a0a0;">{$lform.en_text|escape:"html"}</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            * Text:<br/>
+            <textarea name="text" class="text" rows="5" cols="2">{$lform.text}</textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" class="submit" value="Save" name="lform" />
+        </td>
+    </tr>
+    <tr>
+	<td>&nbsp;<br /><a href="/localstring/list/lang/{$lvals.lang}/">List {$lvals.lang|upper} Localizations</a></td>
+    </tr>
+</table>
+</form>
+</fieldset>

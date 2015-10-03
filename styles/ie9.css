@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+/*.gradient, .green_gradient { filter: none; }*/
+/*.green_gradient{ background: url(/images/vert2.png) 0 -1498px repeat-x #2a8306;}
+.green_gradient:hover{background: url(/images/vert2.png) 0 -1537px repeat-x #3ea713;}
+.green_gradient:active{background: url(/images/vert2.png) 0 -1581px repeat-x #a2cb2b;}
+
+.supported_os .download_btn{background: url(/images/vert2.png) 0 -1624px repeat-x #a2cb2b !important;}
+.supported_os .download_btn:hover{background: url(/images/vert2.png) 0 -1696px repeat-x #a2cb2b !important;}
+.supported_os .download_btn:active{background: url(/images/vert2.png) 0 -1773px repeat-x #a2cb2b !important;}
+
+.blue_gradient{ background: url(/images/vert2.png) 0 -1854px repeat-x #205986;}
+.blue_gradient:hover{background: url(/images/vert2.png) 0 -1901px repeat-x #2a689a;}
+.blue_gradient:active{background: url(/images/vert2.png) 0 -1950px repeat-x #4688da}
+
+.orange_gradient{ background: url(/images/vert2.png) 0 -2004px repeat-x #f8b33b;}
+.orange_gradient:hover{background: url(/images/vert2.png) 0 -2051px repeat-x #ffcb71;}
+.orange_gradient:active{background: url(/images/vert2.png) 0 -2100px repeat-x #f7d061}*/

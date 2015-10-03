@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2636/www/admin.venginse/application/views/products
+END
+featuresAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2636/www/admin.venginse/application/views/products/featuresAdd.tpl
+END
+productsEdit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2636/www/admin.venginse/application/views/products/productsEdit.tpl
+END
+featuresList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2636/www/admin.venginse/application/views/products/featuresList.tpl
+END
+demoAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2636/www/admin.venginse/application/views/products/demoAdd.tpl
+END
+productsList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2636/www/admin.venginse/application/views/products/productsList.tpl
+END
+demoList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2636/www/admin.venginse/application/views/products/demoList.tpl
+END

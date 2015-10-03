@@ -1,0 +1,14 @@
+.LV_validation_message{
+    font-weight:bold;
+    margin:0px 0 0px 10px;
+    /*position:relative;
+    bottom:11px;*/
+}
+
+.LV_valid {
+    color:#00CC00;
+}
+
+.LV_invalid {
+    color:#CC0000;
+}

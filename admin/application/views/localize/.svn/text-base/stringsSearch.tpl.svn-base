@@ -1,0 +1,52 @@
+{literal}<script type= "text/javascript">/*<![CDATA[*/
+function confirmDrop() {
+    return confirm("Do you really want drop this localized string?");
+}
+/*]]>*/</script>{/literal}
+<h1>Search Localized Strings</h1>
+<fieldset>
+<div class="form">
+<form action="" method="post">
+    <input type="radio" id="subject" name="subject" value="nick" checked="1" /><label for="subject">Search by nick</label>&nbsp;
+    {foreach from=$langs item=key}
+    <input type="radio" id="subject_{$key.code}" name="subject" value="{$key.code}" /><label for="subject_{$key.code}">Search by <u>{$key.name}</u> text</label>&nbsp;
+    {/foreach}<br />
+    <input type="text" name="search" value="{$lform.search}" class="text" />
+    <input type="submit" name="lform" value="Search" class="submit" style="margin-bottom:11px;" />
+</form>
+</div>
+</fieldset>
+
+<fieldset>
+<table border="0" cellpadding="5" cellspacing="1" class="form" style="margin:10px 0;" width="100%">
+    <tr>
+	<th>Nick</th>
+	<th>Text</th>
+	<th>&nbsp;</th>
+	<th>{$lvals.lang}</th>
+	{if $lvals.canEdit}
+	<th>&nbsp;</th>
+	{/if}
+	{if $lvals.canDelete}
+	<th>&nbsp;</th>
+	{/if}
+    </tr>
+    {foreach from=$lstrings item=str}
+	{foreach from=$langs item=key}
+    <tr>
+	<td>{$str.nick}</td>
+	<td>{$str.en|escape:"html"}</td>
+	<td>{$key.code}</td>
+	<td>{$str[$key.code]|escape:"html"}</td>
+	{if $lvals.canEdit}
+	<td><a href="/localstring/edit/lang/{$key.code}/id/{$str.id}/" class="ctrl">edit</a></td>
+	{/if}
+	{if $lvals.canDelete}
+	<td><a href="/localstring/delete/lang/{$key.code}/id/{$str.id}/{if $lvals.page > 1}page/{$lvals.page}/{/if}" class="ctrl" onclick="return confirmDrop();">delete</a></td>
+	{/if}
+    </tr>
+	{/foreach}
+    <tr><td colspan="6"><hr /></td></tr>
+    {/foreach}
+</table>
+</fieldset>

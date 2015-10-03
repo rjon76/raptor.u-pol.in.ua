@@ -1,0 +1,101 @@
+<?php
+
+include_once(ENGINE_PATH.'interface/interfaceLocalExt.php');
+include_once(ENGINE_PATH.'class/classPurchase.php');
+include_once(ENGINE_PATH.'class/classProducts.php');
+
+class PurchaseInfo {
+    private $productId = 0;
+    private $purchase;
+    private $licenseData = array('prices' => array(),
+				 'lic' => array(),
+				 'licenses' => array(),
+				 'bundles' => array(),
+				 'bundle_prices' => array(),
+				 'bundle_product_prices' => array(),
+				 'offers' => array(),
+				 'offer_prices' => array(),
+                                 'products' => array()
+				 );
+    private $postValid = FALSE;
+    private $couponValid = 0;
+
+
+    public function __construct() {
+        $this->purchase = new Purchase();
+    }
+
+    public function __destruct() {
+        $this->purchase = NULL;
+    }
+
+    public function getOperators() {
+        return $this->purchase->getOperators();
+    }
+
+	public function getPurchaseInfo($args)
+    {
+		if(!empty($args[0]))
+		{
+		    $this->productId = intval($args[0]);
+		}
+		if(1 > $this->productId)
+		{
+		    return;
+		}
+
+		if($this->purchase->init($this->productId))
+		 {
+	    	if(isset($_POST['process']))
+			{
+				$this->postValid = $this->validatePost();
+		    }
+		    else
+			{
+				$this->licenseData = $this->purchase->processLicenseData();
+				if(isset($_COOKIE['currency']))
+				{
+					 $this->licenseData['geo_currency'] = $_COOKIE['currency'];
+				}
+				elseif(isset($args[1]))
+				{
+					 $this->licenseData['geo_currency'] = $args[1];
+				}
+				else
+				{
+					$this->licenseData['geo_currency'] = 'USD';
+				}
+				//	$this->licenseData['geo_currency'] = $this->purchase->detectCurrency($code);
+				$products = new Products();
+			//	$this->licenseData['prices'] = $this->licenseData['prices'];	
+			//    $this->licenseData['prices'] = json_encode($this->licenseData['prices']);
+			//	$this->licenseData['licenses'] = $this->licenseData['lic'];
+	        //    $this->licenseData['licenses'] = json_encode($this->licenseData['lic']);
+    	        $this->licenseData['currencies2Operators'] = json_encode($this->licenseData['currencies2Operators']);
+        	    $this->licenseData['defaultOperatorId'] = $this->licenseData['operator_id'];
+
+			  //  $this->licenseData['bundle_prices'] = json_encode(isset($this->licenseData['bundle_prices']) ? $this->licenseData['bundle_prices'] : NULL);
+	    		//$this->licenseData['bundle_product_prices'] = json_encode(isset($this->licenseData['bundle_product_prices']) ? $this->licenseData['bundle_product_prices'] : NULL);
+
+			   // $this->licenseData['offer_prices'] = json_encode($this->licenseData['offer_prices']);
+//	    		$this->licenseData['geo_currency'] = json_encode($this->licenseData['geo_currency']);
+	    		$this->licenseData['geo_currency'] = $this->licenseData['geo_currency'];				
+			   // $this->licenseData['products'] = $products->getProductsShort(TRUE);
+
+  /*      		$versions = $products->getProductMajorVersions($this->productId);
+	            if(count($versions) > 1) {
+    	            $this->licenseData['product_versions'] = $versions;
+        	    }*/
+
+            	$this->licenseData['product'] = $products->getProductById($this->productId);
+			    return $this->licenseData;
+			}
+		}
+  }
+
+	private function validatePost()
+	{
+		return TRUE;
+    }
+}
+?>

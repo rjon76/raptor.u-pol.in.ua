@@ -1,0 +1,36 @@
+<fieldset>
+<legend>Add new field</legend>
+<form action="" method="post">
+<table border="0" cellpadding="6" cellspacing="1" class="form">
+<tr>
+    <td>
+        * Name:<br/>
+        <input type="text" name="name" class="text" />
+    </td>
+</tr>
+<tr>
+    <td>
+        Default value:<br/>
+        <input type="text" name="default" class="text"/>
+    </td>
+</tr>
+<tr>
+    <td>
+        Type<br/>
+        <select class="select" name="type">
+            <option value="S">String</option>
+            <option value="A">Array</option>
+            <option value="F">Function</option>
+            <option value="E">Extension</option>
+            <option value="I">Image</option>
+            <option value="W">Flash</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td><input type="submit" class="submit" value="Add" name="addField" /></td>
+</tr>
+
+</table>
+</form>
+</fieldset>

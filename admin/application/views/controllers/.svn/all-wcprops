@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2616/www/admin.venginse/application/views/controllers
+END
+controllersList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2616/www/admin.venginse/application/views/controllers/controllersList.tpl
+END
+controllersRelations.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2616/www/admin.venginse/application/views/controllers/controllersRelations.tpl
+END
+controllersEdit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2616/www/admin.venginse/application/views/controllers/controllersEdit.tpl
+END
+controllersAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2616/www/admin.venginse/application/views/controllers/controllersAdd.tpl
+END

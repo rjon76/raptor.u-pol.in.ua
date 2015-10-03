@@ -1,0 +1,24 @@
+<h1>Add new Group</h1>
+
+<fieldset>
+<legend>Group data</legend>
+
+<form action="/users/list/" method="post">
+<table border="0" cellpadding="0" cellspacing=="0" class="form">
+    <tr>
+        <td>
+            * Group name: {if $users.err.groupName}<span style="color:red;">(group name is empty)</span>{/if}
+                          {if $users.err.groupNameExist}<span style="color:red;">(group name is already exist)</span>{/if}
+            <br/>
+            <input type="text" name="group_name" class="text" value="{$users.val.groupName}" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" class="submit" value="Add" name="groupadd" />
+        </td>
+    </tr>
+</table>
+</form>
+
+</fieldset>

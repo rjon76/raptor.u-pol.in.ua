@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2666/www/admin.venginse/application/views/localize
+END
+stringsAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2616/www/admin.venginse/application/views/localize/stringsAdd.tpl
+END
+stringsList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2666/www/admin.venginse/application/views/localize/stringsList.tpl
+END
+stringsEdit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2666/www/admin.venginse/application/views/localize/stringsEdit.tpl
+END
+stringsSearch.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2616/www/admin.venginse/application/views/localize/stringsSearch.tpl
+END

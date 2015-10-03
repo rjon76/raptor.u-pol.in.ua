@@ -1,0 +1,35 @@
+<h1>Edit Controller</h1>
+
+<fieldset>
+<legend>Controller data</legend>
+
+<form action="/controllers/list/" method="post">
+<table border="0" cellpadding="0" cellspacing=="0" class="form">
+    <tr>
+        <td>
+            Controller name:
+            <br/>
+            <input type="text" name="cont_name" class="text" value="{$conts.val.contName}" disabled="disabled" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Controller menu name:
+            <br/>
+            <input type="text" name="cont_menu_name" class="text" value="{$conts.val.contMenuName}" disabled="disabled" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox" name="is_site_dependent" {if $conts.val.siteDependent}checked="checked"{/if}/> Is site dependent
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" class="submit" value="Update" name="contupdate" />
+        </td>
+    </tr>
+</table>
+</form>
+
+</fieldset>

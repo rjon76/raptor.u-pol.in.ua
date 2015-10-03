@@ -1,0 +1,39 @@
+{literal}<script type= "text/javascript">/*<![CDATA[*/
+function confirmDrop() {
+    return confirm("Do you really want drop this localized string?");
+}
+/*]]>*/</script>{/literal}
+<h1>Extended Green List</h1>
+
+<fieldset>
+<table id="grlist" border="0" cellpadding="5" cellspacing="1" class="form" style="margin:10px 0;" width="100%">
+    <tr>
+	<th>Expression</th>
+	<th>Regular</th>
+	<th>Headers</th>
+	<th>Direction</th>
+	<th>Order</th>
+	{if $glVals.canEdit}<th>&nbsp;</th>{/if}
+	{if $glVals.canDelete}<th>&nbsp;</th>{/if}
+
+    </tr>
+    {foreach from=$glist item=str}
+    <tr>
+	<td>{$str.expression}</td>
+	<td>{if $str.regular == "0"}<img src="/images/unchecked.gif" width="13" height="13" alt="" />
+	    {else}<img src="/images/checked.gif" width="13" height="13" alt="" />
+	    {/if}
+	</td>
+	<td>{foreach from=$str.header item=hd}{$hd}<br />{/foreach}</td>
+	<td>{$str.destination}</td>
+	<td>{$str.order}</td>
+	{if $glVals.canEdit}
+	<td><a href="/greenlist/editext/id/{$str.id}/" class="ctrl">edit</a></td>
+	{/if}
+	{if $glVals.canDelete}
+	<td><a href="/greenlist/deletext/id/{$str.id}/" class="ctrl" onclick="return confirmDrop();">delete</a></td>
+	{/if}
+    </tr>
+    {/foreach}
+</table>
+</fieldset>

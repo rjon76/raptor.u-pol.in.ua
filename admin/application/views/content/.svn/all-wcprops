@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2666/www/admin.venginse/application/views/content
+END
+contentBlockFieldAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2666/www/admin.venginse/application/views/content/contentBlockFieldAdd.tpl
+END
+contentBlocksList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2616/www/admin.venginse/application/views/content/contentBlocksList.tpl
+END
+contentPagesList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2616/www/admin.venginse/application/views/content/contentPagesList.tpl
+END
+contentBlockFieldsList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2616/www/admin.venginse/application/views/content/contentBlockFieldsList.tpl
+END
+contentBlockEdit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2616/www/admin.venginse/application/views/content/contentBlockEdit.tpl
+END
+contentBlockAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2616/www/admin.venginse/application/views/content/contentBlockAdd.tpl
+END
+contentBlockFieldEdit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2666/www/admin.venginse/application/views/content/contentBlockFieldEdit.tpl
+END

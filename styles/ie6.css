@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+.png, #sticker img{/*behavior:url(/styles/iepngfix.htc)*/}
+#header{ height:70px }
+#header .inner{ height:70px ;background:url(/images/header_bkg.png) 0 0 repeat-x ; }
+#header.shadow_bottom{ background:none;   padding:0}
+#header #topLogo {background: url("/images/logo_header.png") no-repeat scroll 0 0 transparent;}
+#header #topLogo h1{ font-size:24px}
+#now_free{ background:url(/images/now_free.png) 0 0 no-repeat; margin:35px 0 0 -45px}
+#curlang{ background:url(/images/curlang.png) 0 0 no-repeat;  }
+#page_langs {margin: 0px 0 0;}
+.flag{background-image:url(/images/vert.gif);}
+#page_langs li #langsdiv{ background:url(/images/lang_bkp.png) 0px 0px no-repeat; }
+
+.popover{background: #333; border:2px solid #666; width:167px; height:105px}
+#main_page_splash .inner{ background:url(/images/bkg2.png) 0 0 repeat;}
+#main_page_splash #splash_build_info{ position:absolute; background:url(/images/splash_build_info.png) 0 0px no-repeat;}
+.logo_news{ background:url(/images/logo_news.png) 0 0 no-repeat;}
+#main_page_splash #news{ background:url(/images/bkg3.png) 0 0px repeat-x;margin:374px auto 0 auto;}
+.supported_os .text_left{ margin:38px 0 0 -220px !important!}
+.supported_os .text_right{ margin:38px 0 0 120px !important}
+.supported_os .download_btn{margin:25px 0 0 -90px !important; }
+#social{ position: absolute; left:0;top:200px; }
+#social a {
+    height: 37px;
+    line-height: 40px;}
+
+#social .twitter .logo {background-image:url(/images/twitter.png); background-position:100% 50%; margin:0px -5px 0 0}
+#social .facebook .logo {background-image:url(/images/facebook.png); background-position:100% 50%;margin:0px -5px 0 0}
+#social .read_rss .logo {background-image:url(/images/rss_big.png); background-position:100% 50%;margin:0px -5px 0 0}
+
+#splash {
+    padding-top: 0px; /*margin:0 auto*/
+}
+#splash .screen {
+	margin: 20px 0 0 -650px;
+	display:block
+}
+#splash #news {
+    background: url("/images/splash_news.png") 0 0  repeat-x;
+}
+.product_feature .inner {
+    display: block; width:470px
+}
+.product_feature .product_screenshot a:hover, .features .feature_screenshot a:hover{ background: none}
+.product_feature .product_screenshot a span, .features .feature_screenshot a span{background: url("/images/zoom.gif") no-repeat scroll 50% 50% transparent;}
+
+#splash #news { position:absolute;
+    margin: 373px auto 0 35px;
+}
+.quote_left2{background-image:url(/images/quote_left2.png); background-position:0 0}
+
+.product_menu h1.title .box_logo{background-image:url(/images/box_logo.jpg); background-position:0 10px}
+

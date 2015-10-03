@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2636/www/admin.venginse/application/views/greenlist
+END
+simplelistList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2636/www/admin.venginse/application/views/greenlist/simplelistList.tpl
+END
+extlistEdit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2616/www/admin.venginse/application/views/greenlist/extlistEdit.tpl
+END
+extlistAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2616/www/admin.venginse/application/views/greenlist/extlistAdd.tpl
+END
+extlistList.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2636/www/admin.venginse/application/views/greenlist/extlistList.tpl
+END
+simplelistEdit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2616/www/admin.venginse/application/views/greenlist/simplelistEdit.tpl
+END
+simplelistAdd.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2616/www/admin.venginse/application/views/greenlist/simplelistAdd.tpl
+END

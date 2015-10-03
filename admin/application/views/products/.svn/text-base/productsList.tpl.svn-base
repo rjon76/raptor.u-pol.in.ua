@@ -1,0 +1,37 @@
+{literal}<script type= "text/javascript">/*<![CDATA[*/
+{/literal}{foreach from=$products.cat item=cname}
+{literal}var cat{/literal}{$cname}{literal} = false;
+{/literal}{/foreach}{literal}
+/*]]>*/</script>{/literal}
+<h1>Products List</h1>
+<fieldset>
+    {foreach from=$products.prods item=category key=cat_name}
+    <fieldset><legend><a id="ln{$products.cat[$cat_name]}" class="phide" href="javascript:void();" onclick="return pdraw('{$products.cat[$cat_name]}');">{$cat_name}</a></legend>
+        <div id="cat{$products.cat[$cat_name]}" class="p_container" style="display:none;">
+            <div class="p_container">
+                <div class="clangs">
+                {foreach from=$products.langs item=lang}
+                <div class="hlangs"><img src="/images/{$lang.l_code}.png" width="37" height="29" alt="{$lang.l_name}" /></div>
+                {/foreach}
+                </div>
+            </div>
+            {foreach from=$category item=prod}
+            <div id="prod{$prod.p_id}" class="prow"{if $prod.p_blocked=="1"} style="color:#a1a1a1;"{/if}>
+                <div class="ptitle">{if $prod.p_featured=="1"}<span>[{$prod.p_title|escape:"html"}]</span>{else}[{$prod.p_title|escape:"html"}]{/if}</div>
+                <div class="porder">
+                <img src="/images/2up.gif" width="20" height="20" alt="Product up" class="pointer" onclick="upProduct({$prod.cat_id},{$prod.p_id});" /><br />
+                <img src="/images/2down.gif" width="20" height="20" alt="Product down" class="pointer" onclick="downProduct({$prod.cat_id},{$prod.p_id});" />
+                </div>
+                {foreach from=$products.langs item=lang}
+                <div class="plangs"><a href="/products/featuredit/id/{$prod.p_id}/lang/{$lang.l_code}/">features</a><hr/>
+                <a href="/products/demoedit/id/{$prod.p_id}/lang/{$lang.l_code}/">demolimits</a></div>
+                {/foreach}
+                <div class="pedit"><a href="/products/edit/id/{$prod.p_id}/">edit</a></div>
+                <div class="pplatf">{$prod.platform}</div>
+            </div>
+            {/foreach}
+
+        </div>
+    </fieldset>
+    {/foreach}
+</fieldset>

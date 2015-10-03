@@ -1,0 +1,21 @@
+<h1>Controllers List</h1>
+
+<fieldset>
+<table border="0" cellpadding="5" cellspacing=="0" class="form">
+<tr>
+    <td width="200"><strong>Menu name</strong></td>
+    <td><strong>Is site related:</strong></td>
+    <td></td>
+</tr>
+{foreach from=$conts.contsList item=cont}
+<tr>
+    <td>{$cont.c_menu_name}</td>
+    <td align="center">{if $cont.c_is_site_dependent}Yes{else}No{/if}</td>
+    <td>
+        <a href="/controllers/edit/id/{$cont.c_id}/" class="ctrl">edit</a>
+        <a href="/controllers/delete/id/{$cont.c_id}/" class="ctrl">delete</a>
+    </td>
+</tr>
+{/foreach}
+</table>
+</fieldset>

@@ -1,0 +1,27 @@
+@charset "windows-1251";
+/* CSS Document */
+#main_page_splash #news {
+	margin:380px auto 0 auto;
+}
+#page_langs li #langsdiv {
+	margin-top:17px;
+	margin-left:-53px;
+}
+.supported_os .text_left {
+	margin: 38px 0 0 -220px;
+}
+.supported_os .text_right {
+	margin: 38px 0 0 115px;
+}
+.supported_os .download_btn {
+	margin: 25px 0 0 -95px;
+}
+#splash .screen {
+	margin: 20px 0 0 -650px;
+	display:block
+}
+
+.product_feature .inner {
+    display: block; width:470px
+}
+#splash #news { position:absolute; display:block;  margin: 373px auto 0 35px;}

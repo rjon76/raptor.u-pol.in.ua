@@ -1,0 +1,47 @@
+<h1>Controller 2 Site relations</h1>
+
+<fieldset>
+<legend>Related sites</legend>
+
+{if $conts.relsList}
+<table border="0" cellpadding="5" cellspacing=="0" class="form">
+    <tr>
+        <td width="200"><strong>Sites</strong></td>
+        <td></td>
+    </tr>
+    {foreach from=$conts.relsList item=rel}
+    <tr>
+        <td>{$rel.s_hostname}</td>
+        <td><a href="/controllers/delrel/cont/{$rel.sc_controller_id}/site/{$rel.sc_site_id}/" class="ctrl">delete</a></td>
+    </tr>
+    {/foreach}
+</table>
+{else}
+No any related sites.
+{/if}
+</fieldset>
+
+<fieldset>
+<legend>Add relation</legend>
+{if $conts.sitesList}
+<form action="" method="post">
+<table border="0" cellpadding="0" cellspacing=="0" class="form">
+    <tr>
+        <td>
+        <select name="site" class="select">
+        {html_options options=$conts.sitesList}
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" class="submit" value="Edit" name="reladd" />
+        </td>
+    </tr>
+</table>
+</form>
+{else}
+All sites added to this controller.
+{/if}
+
+</fieldset>

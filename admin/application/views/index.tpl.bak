@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"  lang="en">
+<head>
+	<base href="http://widestep3/admin/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>VENDETA - V ENgine Data and tEmplaTe Administration</title>
+
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+    {foreach from=$page_css item=css}
+    <link rel="stylesheet" type="text/css" href="/styles/{$css}" />
+    {/foreach}
+    <script language="javascript">var SiteDir = '{$header.SiteDir}'; var SiteHostname='{$header.SiteHostname}';</script>        
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/js/ajax.js"></script>
+    <script type="text/javascript" src="/js/basic.js"></script>
+    {foreach from=$page_js item=js}
+    <script type="text/javascript" src="/js/{$js}"></script>
+    {/foreach}
+</head>
+<body>
+
+{if $files_to_include[0] != "login.tpl"}
+{include file="header.tpl"}
+<div class="page">
+{foreach from=$files_to_include item=file}
+    {include file="$file"}
+{/foreach}
+</div>
+{else}
+{include file="login.tpl"}
+{/if}
+
+
+</body>
+</html>

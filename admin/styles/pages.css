@@ -1,0 +1,7 @@
+.form tr:hover td {
+    background:#eee;
+}
+
+.form tr.th:hover td {
+    background:#fff;
+}

@@ -1,0 +1,13 @@
+.commanderLayer {
+    display:none;
+    position:absolute;
+    overflow:scroll;
+    top:300px;
+    left:300px;
+    width:400px;
+    height:500px;
+    padding:0 5px 15px 15px;
+    border:2px solid #000;
+    background:#fff;
+    text-align:center;
+}

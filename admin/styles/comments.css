@@ -1,0 +1,176 @@
+@charset utf-8;
+input.text[disabled]{
+    border: none;
+}
+legend{width:100%}
+a.add{
+    color:#525151; text-decoration: none;
+    border: 1px solid #525151;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;  
+    -khtml-border-radius:5px;
+    padding:5px;
+}
+a.add:hover{
+    color:#101010; text-decoration: none;
+    border: 1px solid #101010;
+
+}
+.table-list{width:100%}
+.table td{
+    font-size: 13px;
+    line-height: 18px;
+    color:#606060;
+    font-weight:400;
+    padding:10px 8px;
+    border-color:#c5c5c5;
+    border-bottom:1px solid #c5c5c5;
+    vertical-align: middle;
+}
+.table th{
+    font-size: 14px;
+    font-weight:600;
+    border-bottom:2px solid #c5c5c5;
+    text-align: center;
+    color:#606060;
+}
+.table tr.row-hidden td{opacity:0.5;filter: alpha(opacity=50);background-color: #373737;}
+/*
+.table > tbody > tr:nth-of-type(2n+1) {
+    background-color: #f3f4f4;
+}
+*/
+.table > tbody > tr:hover td{
+    background-color: #f8f8f8;
+}
+.table-list tr.row-hidden:hover td{background-color: #373737;}
+.table-list td{
+    text-align:center;    
+}
+.table td.id{
+    max-width:5%;
+}
+.table td.author{
+    max-width:15%;
+    font-weight:600;
+    font-size: 14px;
+    text-align: center;
+}
+.table td.text{
+    width:40%;
+    text-align:left;
+    color:#101010;
+}
+.table td.pages{
+    width:25%;
+    text-align:left;
+}
+.table td.pages a{
+    color:#505050;
+    text-decoration: none;
+    border-bottom: 1px dotted #505050;
+}
+.table td.pages a:hover{
+    color:#101010;
+    text-decoration: none;
+    border-bottom: 1px dotted #101010;
+}
+.table td.edit{
+    width:10%
+}
+.table td.order{
+    width:5%
+}
+.table span.date{display: block; font-style: italic; font-weight: 600;}
+a.phide{text-decoration: none;}
+.icon-avatars{
+    display: block;
+    margin: 0 auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;  
+    -khtml-border-radius:40px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    -khtml-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);  
+    vertical-align: middle; 
+    border:3px solid #fff;
+    width:72px;height:72px;
+}
+option.avatars{
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-align:left;
+    padding-left:40px!important;
+    height:36px;
+    background-size:36px 36px;
+    -webkit-background-size:36px 36px;
+    -moz-background-size:36px 36px;
+}
+.avatarDefault{background-image: url("../images/avatars/avatarDefault.jpg");}
+.avatar1{background-image: url("../images/avatars/avatar1.jpg");}
+.avatar2{background-image: url("../images/avatars/avatar2.jpg");}
+.avatar3{background-image: url("../images/avatars/avatar3.jpg");}
+.avatar4{background-image: url("../images/avatars/avatar4.jpg");}
+.avatar5{background-image: url("../images/avatars/avatar5.jpg");}
+.avatar6{background-image: url("../images/avatars/avatar6.jpg");}
+.avatar7{background-image: url("../images/avatars/avatar7.jpg");}
+.avatar8{background-image: url("../images/avatars/avatar8.jpg");}
+.avatar9{background-image: url("../images/avatars/avatar9.jpg");}
+.avatar10{background-image: url("../images/avatars/avatar10.jpg");}
+.avatar11{background-image: url("../images/avatars/avatar11.jpg");}
+.avatar12{background-image: url("../images/avatars/avatar12.jpg");}
+.avatar13{background-image: url("../images/avatars/avatar13.jpg");}
+.avatar14{background-image: url("../images/avatars/avatar14.jpg");}
+.avatar15{background-image: url("../images/avatars/avatar15.jpg");}
+.avatar16{background-image: url("../images/avatars/avatar16.jpg");}
+.avatar17{background-image: url("../images/avatars/avatar17.jpg");}
+.avatar18{background-image: url("../images/avatars/avatar18.jpg");}
+.avatar19{background-image: url("../images/avatars/avatar19.jpg");}
+.avatar20{background-image: url("../images/avatars/avatar20.jpg");}
+.avatar21{background-image: url("../images/avatars/avatar21.jpg");}
+.avatar22{background-image: url("../images/avatars/avatar22.jpg");}
+.avatar23{background-image: url("../images/avatars/avatar23.jpg");}
+.avatar24{background-image: url("../images/avatars/avatar24.jpg");}
+.avatar25{background-image: url("../images/avatars/avatar25.jpg");}
+.avatar26{background-image: url("../images/avatars/avatar26.jpg");}
+.avatar27{background-image: url("../images/avatars/avatar27.jpg");}
+.avatar28{background-image: url("../images/avatars/avatar28.jpg");}
+.avatar29{background-image: url("../images/avatars/avatar29.png");}
+.avatar30{background-image: url("../images/avatars/avatar30.png");}
+.avatar31{background-image: url("../images/avatars/avatar31.jpg");}
+.avatar32{background-image: url("../images/avatars/avatar32.jpg");}
+.avatar33{background-image: url("../images/avatars/avatar33.jpg");}
+.avatar34{background-image: url("../images/avatars/avatar34.jpg");}
+.avatar35{background-image: url("../images/avatars/avatar35.png");}
+.avatar36{background-image: url("../images/avatars/avatar36.png");}
+.avatar37{background-image: url("../images/avatars/avatar37.jpg");}
+.avatar38{background-image: url("../images/avatars/avatar38.jpg");}
+.avatar39{background-image: url("../images/avatars/avatar39.jpg");}
+.avatar40{background-image: url("../images/avatars/avatar40.jpg");}
+.avatar41{background-image: url("../images/avatars/avatar41.jpg");}
+.avatar42{background-image: url("../images/avatars/avatar42.jpg");}
+.avatar43{background-image: url("../images/avatars/avatar43.jpg");}
+.avatar44{background-image: url("../images/avatars/avatar44.jpg");}
+.avatar45{background-image: url("../images/avatars/avatar45.jpg");}
+.avatar46{background-image: url("../images/avatars/avatar46.jpg");}
+.avatar47{background-image: url("../images/avatars/avatar47.jpg");}
+.avatar48{background-image: url("../images/avatars/avatar48.jpg");}
+.avatar49{background-image: url("../images/avatars/avatar49.jpg");}
+.avatar50{background-image: url("../images/avatars/avatar50.jpg");}
+
+/* retina */
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+	  
+}

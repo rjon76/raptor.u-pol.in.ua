@@ -1,0 +1,165 @@
+@charset utf-8;
+
+
+.header-top{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.header-top h1{
+    font-size:30px;
+    line-height:36px;
+    color:#ffffff;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.75);
+    margin-top:12px;
+}
+ 
+.arrow {
+    position: absolute;
+    background-image:  url("/images/arrow.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left:45%;
+    top:5px;
+}
+
+/* gallery */
+.gallery {padding-top:75px;padding-bottom:45px;}
+.gallery ul.items{list-style: none outside none;padding:0;}
+.gallery .image-area {padding-top:45px;}
+.gallery ul.items > li:not(.clearfix){margin-bottom:15px;}
+.gallery a.screenshot img{
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out; 
+}
+.gallery a.screenshot:hover img{
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+}
+
+
+/* features */
+.features{padding-top:30px;padding-bottom:10px;}
+.features ul.items{list-style: none outside none;padding:0;}
+.features ul.items > li:not(.clearfix){margin-bottom:25px;}
+.features .title-content{color:#ffffff;font-size:26px;line-height:31px; margin-bottom:10px;}
+.features .text-content{
+    color:#ffffff;
+    font-size: 16px;
+    line-height:21px;  
+    margin-bottom:25px;
+}
+
+/* features-media */
+.features-media{padding-top:30px;padding-bottom:10px;}
+.features-media ul.items{list-style: none outside none;padding:0;}
+.features-media ul.items > li:not(.clearfix){margin-bottom:25px;}
+.features-media .text-content{
+  color:#ffffff;
+  font-size: 16px;
+  line-height:21px;  
+  margin-bottom:25px;
+}
+
+/* comments */
+.comments{padding-top:30px;padding-bottom:10px;}
+.comments ul.items{list-style: none outside none;padding:0;}
+.comments ul.items > li:not(.clearfix){margin-bottom:25px;}
+.comments .text-content{
+    font-size:14px; line-height:16px; color:#ffffff;
+    font-family: "Georgia",Arial,sans-serif;
+    font-style: italic;
+    text-align: left;
+}
+.comments .author{margin-top:10px;font-size:18px; line-height:21px; color:#ffa64d;}
+
+
+/* lenta 3 columns */
+.lenta-3-columns{padding: 3px 0px;}
+
+.lenta-3-columns .left-text,.lenta-3-columns .right-text{
+    color:#ffffff;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.75);   
+} 
+.lenta-3-columns .left-text{
+    font-size:30px;
+    line-height:36px;
+    padding-top:10px;
+}
+.lenta-3-columns .right-text{
+    font-size:22px;
+    line-height:24px;
+    padding-top:15px;
+} 
+
+/* product-info */
+
+.product-info{padding-top:25px;padding-bottom:30px;}
+
+.product-info .title{font-size:40px; line-height:48px; color:#ffffff;text-shadow: 0px 5px 5px rgba(0,0,0,0.75); }
+.product-info .description{margin-top:5px;font-size:30px; line-height:36px; color:#ffffff;text-shadow: 0px 5px 5px rgba(0,0,0,0.75); }
+.product-info .price{margin-top:10px;font-size:60px; line-height:72px; color:#ff0000;text-shadow: 0px 5px 5px rgba(0,0,0,0.75); }
+.product-info .btn-group{margin-top:20px;}
+.product-info .btn-group .btn{margin-bottom:10px;color:#ffffff; font-size:30px;}
+
+/* footer */
+
+.footer{padding-top:15px;padding-bottom:15px;}
+.footer .description{font-size:26px; line-height:32px; color:#ffffff;text-shadow: 0px 5px 5px rgba(0,0,0,0.75);}
+.footer .text{font-size:16px; line-height:18px; color:#ffffff;text-shadow: 0px 1px 1px rgba(0,0,0,0.75);}
+
+@media (min-width: 1200px) {
+  
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+ 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width:  991px) {
+
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+        
+
+}
+
+@media (max-width: 767px) {
+    .features-media .media-left{
+        display:block;
+        margin-bottom: 10px;
+    }
+    
+    .comments .media-left{
+        display:block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+	
+
+}	
+
+@media (max-width: 320px) {
+
+}
+/* retina   */
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+ 
+
+}

@@ -1,0 +1,30 @@
+<h1>
+<div class="h1select">
+Language:
+<select onchange="window.location = '/content/list/lang/' + this.options[this.selectedIndex].value + '/'">
+    <option value="0">All</option>
+    <option value="1" {if $content.lang == 1}selected="selected"{/if}>EN</option>
+    <option value="2" {if $content.lang == 2}selected="selected"{/if}>FR</option>
+    <option value="3" {if $content.lang == 3}selected="selected"{/if}>DE</option>
+</select>
+</div>
+Pages</h1>
+
+<fieldset>
+<table border="0" cellpadding="6" cellspacing="1" class="form">
+<tr>
+    <td><strong>ID</strong></td>
+    <td><strong>Address</strong></td>
+    <td><strong>Language</strong></td>
+    <td></td>
+</tr>
+{foreach from=$content.pagesList item=page}
+<tr>
+    <td>{$page.pg_id}</td>
+    <td>{$page.pg_address}</td>
+    <td align="center">{$page.lang}</td>
+    <td><a href="/content/edit/id/{$page.pg_id}/" class="ctrl">edit content</a></td>
+</tr>
+{/foreach}
+</table>
+</fieldset>

@@ -11,6 +11,7 @@ admin/application/views_c/*
 download/*
 log/*
 logs/*
+logs/application/*
 cache/*
 templates_c/*
 tmp/*

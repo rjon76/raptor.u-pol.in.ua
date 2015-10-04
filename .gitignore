@@ -29,3 +29,6 @@ tmp/*
 *.gz
 *.gzip
 *.swp
+application/config.ini
+application/includes.inc.php
+admin/application/config.ini

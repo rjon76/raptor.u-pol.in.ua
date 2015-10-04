@@ -1,4 +1,9 @@
 syntax: glob
+fcgi-bin/*
+cgi-bin/*
+awstats/*
+cp/*
+bin/*
 admin/application/views_c/*
 *.log
 .htaccess

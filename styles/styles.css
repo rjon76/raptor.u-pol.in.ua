@@ -1,23 +1,5 @@
 @charset utf-8;
 
-
-@font-face {
-    font-family:Gotham Pro Regular;
-    src: local("Gotham Pro Regular"), url(Gotham/gothaproreg-webfont.woff);
-}
-@font-face {
-    font-family:Gotham Pro Medium;
-    src: local("Gotham Pro Medium"), url(Gotham/gothapromed-webfont.woff);
-}
-@font-face {
-    font-family:Gotham Pro Bold;
-    src: local("Gotham Pro Bold"), url(Gotham/gothaprobol-webfont.woff);
-}
-@font-face {
-    font-family:ElmeticaNew;
-    src: local("ElmeticaNew"), url(ElmeticaNew.ttf);
-}
-
 /* html, body, tags */
 html, body{
 	text-rendering: optimizeLegibility;
@@ -37,9 +19,10 @@ iframe{
    margin-bottom:-10px;
 }
 body {
-	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	/*font-family: "Helvetica Neue", Arial, Verdana, sans-serif;*/
+	font-family: Arial, Helvetica, sans-serif, 'Lucida Grende';
 	color:#101010;
-	font-size:13px;
+	font-size:14px;
     /*background-image:url("/images/background/bkg.jpg");*/
     /*background-position:top left;
     background-repeat: repeat;*/
@@ -66,8 +49,8 @@ strong{
     font-family: "Gotham Pro Bold", "Helvetica Neue", Arial, Verdana, sans-serif;
 }
 /* style for tags */
-a{outline:none!important;color:#0088d3;text-decoration:none;}
-a:hover{text-decoration:underline;color:#006ca8;}
+a{outline:none!important;color:#0088d3;text-decoration: underline;}
+a:hover{text-decoration: none;color:#006ca8;}
 a:active{color:#006ca8;}
 *{outline:none;}
 p{margin:0;}
@@ -500,7 +483,7 @@ input[type=text]{
 .alert-dismissable, .alert-dismissible {
     padding-right: 35px;
 }
-
+.buy_link{}
 
 /*--------------media-----------*/
 @-webkit-viewport {

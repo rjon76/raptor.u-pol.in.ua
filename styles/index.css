@@ -23,10 +23,10 @@
 }
 
 /* gallery */
-.gallery {padding-top:75px;padding-bottom:45px;}
+.gallery {padding-top:55px;padding-bottom:45px;}
 .gallery ul.items{list-style: none outside none;padding:0;}
 .gallery .image-area {padding-top:45px;}
-.gallery ul.items > li:not(.clearfix){margin-bottom:15px;}
+.gallery ul.items > li:not(.clearfix){margin-bottom:0px;}
 .gallery a.screenshot img{
     -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;

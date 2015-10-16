@@ -11,7 +11,7 @@
 		{/if}
     </div>  
 
-    <div class="content row text-center col-xs-12 col-sm-5 col-md-5 col-lg-5">	
+    <div class="content row  col-xs-12 col-sm-5 col-md-5 col-lg-5">	
     
     {if isset($vars.title)}
 	   <div class="title">{$vars.title}</div>

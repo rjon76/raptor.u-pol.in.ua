@@ -162,5 +162,9 @@ if (typeof ($.colorbox) === "function" && screen.width > 480) {
 
         
     })(jQuery);  	
-	 
+
+/*----------------------*/
+
+	$('.carousel').carousel();
+	
 });

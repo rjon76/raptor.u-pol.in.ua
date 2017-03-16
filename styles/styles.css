@@ -501,7 +501,11 @@ width: device-width;
 @viewport {
 width: device-width;
 }
-
+/*-------------*/
+.slider .items{
+	padding-top:50px;
+	padding-bottom:50px	
+}
 @media (min-width: 1200px) {
   
 }

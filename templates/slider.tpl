@@ -18,26 +18,34 @@
     <div class="items row text-center col-xs-12 col-sm-12 col-md-7 col-lg-7">
     	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
          		<!-- Indicators -->
+         		{if isset($vars.show_indicators)}
   				<ol class="carousel-indicators">
 	        	{foreach from=$vars.images item=item name="slides"}
             		<li data-target="#carousel-example-generic" data-slide-to="{$smarty.foreach.slides.iteration}" {if ($item.active)}class="active"{/if}></li>
 	            {/foreach}
 				</ol>
+               {/if}
                 
                 <!-- Wrapper for slides -->
   				<div class="carousel-inner" role="listbox">
                 	{foreach from=$vars.images item=item}
-    				<div class="item {if ($item.active)}active{/if}">
+    				<div class="item {if ($item.active)}active{/if}" {if isset($vars.image.height)} style="min-height:{$vars.image.height}px"{/if}>
+     					{if isset($item.type) && $item.type == 'video'}
+     					<div class="embed-responsive embed-responsive-4by3">
+     						<iframe class="embed-responsive-item"  src="{$item.src}" frameborder="0" allowfullscreen></iframe>
+     						</div>
+     					{else}
       					<img src="{$item.src}" alt="{$item.title}"/>
                         {if isset($item.text)}
       					<div class="carousel-caption">
        						{$item.text}
       					</div>
                         {/if}
+                        {/if}
     				</div>
 					{/foreach}  
                 </div>
-                
+                {if isset($vars.show_control)}
                <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -46,7 +54,8 @@
                 <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
-                </a>         
+                </a> 
+                {/if}        
         </div>
      </div>  
 

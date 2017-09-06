@@ -484,7 +484,11 @@ input[type=text]{
     padding-right: 35px;
 }
 .buy_link{}
-
+/*--------*/
+.carousel-control.left,
+.carousel-control.right{
+	background-image: none;
+}
 /*--------------media-----------*/
 @-webkit-viewport {
 width: device-width;
